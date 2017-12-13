@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+        <item android:state_selected="false" android:drawable="@color/listSelect"/>
+        <item android:state_selected="true" android:drawable="@color/listUnSelect"/>
+        <!--<item android:state_pressed="true" android:drawable="@color/listUnSelect"/>-->
+        <!--<item  android:drawable="@color/listUnSelect"/>-->
+        <!--<item android:state_focused="false" android:drawable= "@color/listSelect"/>-->
+        <!--<item android:state_focused="true" android:drawable= "@color/listUnSelect"/>-->
+
+        <!--android:state_selected是设置选中时的效果-->
+        <!--android:state_focused是设置获得焦点的效果-->
+        <!--android:state_pressed是设置点击的效果-->
+        <!--android:state_enabled是设置是否响应事件-->
+</selector>

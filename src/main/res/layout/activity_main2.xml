@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    >
+
+    <LinearLayout
+        android:id="@+id/ll_kind_scro"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_nest_toolBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fitsSystemWindows="true"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+
+                    android:id="@+id/ll_head"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentTop="true"
+                    android:gravity="center_vertical">
+
+                    <LinearLayout
+                        android:id="@+id/ll_sao"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/iv_kind_back"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@mipmap/leftjiantou" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_search"
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/search_bg_select"
+                        android:gravity="center_vertical"
+                        android:padding="5dp">
+
+                        <ImageView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/search_icon2" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:id="@+id/tes"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:padding="2dp"
+                            android:text="11.11品牌榜"
+                            android:textColor="@color/search_tv"
+                            android:textSize="@dimen/search_tv" />
+
+                        <ImageView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/root" />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/ll_msg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/iv_kind_type"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:src="@mipmap/kind_grid" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#ccc"></View>
+
+                <LinearLayout
+                    android:id="@+id/ll_shaixuan"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="40dp"
+                    android:gravity="center">
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="综合"
+                            android:textColor="@drawable/group_select" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:button="@null"
+
+                            android:gravity="center"
+                            android:text="销量"
+                            android:textColor="@drawable/group_select" />
+
+                        <RadioButton
+                            android:layout_width="wrap_content"
+
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="价格"
+                            android:textColor="@drawable/group_select" />
+
+                        <TextView
+                            android:id="@+id/tv_shaixuan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableRight="@mipmap/shaixuan"
+                            android:gravity="center"
+                            android:text="筛选"
+
+                            android:textColor="@color/tab_kind_select"
+                            android:textSize="@dimen/kind_shaixuan" />
+                    </RadioGroup>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ccc"></View>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/btn_jingdong"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="京东配送" />
+
+                <Button
+                    android:id="@+id/btn_new_shop"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="新品" />
+
+                <Button
+                    android:id="@+id/btn_grade"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableRight="@mipmap/down"
+                    android:text="品牌" />
+
+                <Button
+                    android:id="@+id/btn_caizhi"
+
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableRight="@mipmap/down"
+                    android:text="材质" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#ccc"></View>
+
+            <com.jcodecraeer.xrecyclerview.XRecyclerView
+                android:id="@+id/rcv_kind"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"></com.jcodecraeer.xrecyclerview.XRecyclerView>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

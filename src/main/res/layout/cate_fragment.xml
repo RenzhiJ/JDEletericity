@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:id="@+id/ll_head"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+
+                <ImageView
+                    android:id="@+id/iv_kind_back"
+                    android:layout_width="30dp"
+
+                    android:layout_height="30dp"
+                    android:src="@mipmap/leftjiantou" />
+
+
+            <LinearLayout
+                android:id="@+id/ll_search"
+                android:padding="5dp"
+                android:orientation="horizontal"
+                android:background="@drawable/search_bg_select"
+                android:layout_weight="1"
+
+                android:layout_width="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_height="30dp">
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/search_icon2"
+                    />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="2dp"
+                    android:text="满199元减100元啦!"
+                    android:textColor="@color/search_tv"
+                    android:textSize="@dimen/search_tv" />
+
+                <ImageView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/root"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:padding="5dp"
+                android:id="@+id/ll_msg"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp">
+                <ImageView
+                    android:id="@+id/iv_kind_type"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+
+                    android:src="@mipmap/kind_grid"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ListView
+            android:id="@+id/lv_left"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:listSelector="@drawable/mylist_view"></ListView>
+
+        <ListView
+            android:id="@+id/lv_right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
+
+    </LinearLayout>
+
+</LinearLayout>

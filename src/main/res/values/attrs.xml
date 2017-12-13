@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+     <declare-styleable name="CNiaoToolBar">
+         <attr name="rightButtonIcon" format="reference"/>
+         <attr name="isShowSearchView" format="boolean"/>
+         <attr name="rightButtonText" format="string"/>
+     </declare-styleable>
+    <declare-styleable name="searchedit">
+        <attr name="imagewidth" format="dimension" />
+        <attr name="textSize" format="dimension" />
+        <attr name="textColor" format="color" />
+    </declare-styleable>
+</resources>

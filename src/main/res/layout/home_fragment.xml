@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.youth.banner.Banner
+                android:id="@+id/ban"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"></com.youth.banner.Banner>
+
+
+            <include layout="@layout/title_layout"
+                android:id="@+id/include"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"></include>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ban"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/grid_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </android.support.v7.widget.RecyclerView>
+
+                <include layout="@layout/miaosha"></include>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rcy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </android.support.v7.widget.RecyclerView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:gravity="center"
+                    android:text="为你推荐"
+                    android:textColor="#f00"
+                    android:textSize="15sp" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rcy_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </android.support.v7.widget.RecyclerView>
+
+                <!--<com.example.bwie.mydemo.view.HomeBottomView-->
+                <!--android:id="@+id/rcy_bottom"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"></com.example.bwie.mydemo.view.HomeBottomView>-->
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
